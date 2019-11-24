@@ -20,7 +20,7 @@ const contactScroll = document.getElementById("contact").offsetTop - 300; //1200
 
 
 const scrollToEl = (selector) => {
-    document.querySelector(selector).scrollIntoView({ behavior: 'smooth', block: 'end' });
+    document.querySelector(selector).scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 let sp = window.pageYOffset;
@@ -58,7 +58,7 @@ window.onscroll = function () {
         document.querySelector(".navbar").style.borderBottom = "1px solid rgba(0, 0, 0, 0.03)";
 
     } else {
-        document.querySelector(".navbar").style.top = "-192px";
+        document.querySelector(".navbar").style.top = "-492px";
         document.querySelector(".navbar").style.borderBottom = "1px solid rgba(0, 0, 0, 0)";
     }
     sp = currentScrollPos;

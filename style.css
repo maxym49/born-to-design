@@ -28,6 +28,43 @@ p {
   color: #555555;
 }
 
+.banner {
+  display: flex;
+  padding-top: 193px;
+  min-height: calc(100vh - 193px);
+  min-width: 100vw;
+  justify-content: center;
+  background-attachment: fixed;
+  flex-wrap: wrap;
+}
+
+.banner img {
+  display: flex;
+  object-fit: contain;
+}
+
+.banner div {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  padding-left: 150px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.banner h1 {
+  color: #101010;
+  font-family: "Fira Sans", sans-serif;
+  text-align: start;
+  font-weight: 900;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.banner h3 {
+  font-weight: 300;
+}
+
 .navbar {
   display: flex;
   width: 100%;
@@ -107,7 +144,7 @@ p {
 }
 
 .header-wrapper #typed {
-  font-size: 6vw;
+  font-size: 4.5vw;
   font-weight: 900;
   font-family: "Fira Sans", sans-serif;
   color: #101010;
@@ -119,7 +156,7 @@ p {
 }
 
 .typed-cursor {
-  font-size: 7vw;
+  font-size: 5vw;
   font-weight: 900;
   color: #101010;
 }
@@ -163,7 +200,7 @@ p {
 
 .cont-section .line {
   display: flex;
-  width: 120px;
+  min-width: 120px;
   height: 1px;
   background: #c7c7c7;
 }
@@ -498,11 +535,21 @@ footer {
   .footer-col {
     margin: 20px 0;
   }
+
+  .banner div {
+    padding: 0;
+  }
+
+  .banner img {
+    margin-bottom: 50px;
+  }
 }
 
 @media only screen and (max-width: 640px) {
   .navbar {
-    padding: 25px;
+    padding: 25px 10px;
+    display: flex;
+    flex-wrap: wrap-reverse;
   }
 
   .sidebar-dots {
@@ -515,12 +562,6 @@ footer {
   }
 
   .text-box {
-    padding: 50px;
-    margin-right: 0;
-  }
-
-  .text-box::after,
-  .text-box::before {
     display: none;
   }
 
@@ -532,7 +573,7 @@ footer {
   }
 
   .space-bt h1 {
-    font-size: 5em;
+    font-size: 4em;
   }
 
   .space-bt h1 span {
@@ -588,6 +629,30 @@ footer {
   footer {
     padding: 20px;
     flex-direction: column;
+  }
+
+  .banner img {
+    width: 260px;
+  }
+
+  .banner div {
+    width: 100%;
+    padding: 25px;
+    align-items: center;
+  }
+
+  .banner div h1,
+  .banner div h3 {
+    text-align: center;
+    max-width: 300px;
+  }
+
+  .header-wrapper #typed {
+    font-size: 2em;
+  }
+
+  .typed-cursor {
+    display: none;
   }
 }
 
