@@ -234,6 +234,7 @@ p {
 }
 
 .space-bt h1 {
+  color: #101010;
   font-size: 6em;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
@@ -583,6 +584,10 @@ footer {
 
   .contact-form form button {
     margin-right: 20px;
+  }
+  footer {
+    padding: 20px;
+    flex-direction: column;
   }
 }
 

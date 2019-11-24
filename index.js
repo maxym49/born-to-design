@@ -1,6 +1,6 @@
 window.onload = function () {
     const loader = document.querySelector(".loader-wrapper");
-    loader.classList.add("fade-out");
+    this.setTimeout(() => loader.classList.add("fade-out"), 500)
 };
 
 const typed = new Typed('#typed', {
